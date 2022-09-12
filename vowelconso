@@ -1,0 +1,29 @@
+#include<iostream>
+
+using namespace std;
+
+void consvowel(char s[])
+{
+    int count =0,count2 =0 ;
+    while(*s!='\0')
+    {
+    if(*s == 'a' || *s=='e' || *s=='i' || *s=='o' || *s=='u' || *s=='A' || *s=='E' || *s=='I' || *s=='O' ||*s=='U' )
+    {
+        count++;
+        
+    }
+    
+    else
+  count2++;
+    }
+    s++;
+    cout<<count<<" "<<count2;
+}
+
+int main()
+{
+    char s[24];
+    cin>>s;
+    
+    consvowel(s);
+}
