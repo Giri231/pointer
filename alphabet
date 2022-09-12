@@ -1,0 +1,28 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    char alph[27];
+    int x;
+    char *ptr;
+ 	
+    ptr = alph;     
+
+    for(x=0;x<26;x++)
+    {
+        *ptr=x+'A';
+        ptr++;
+    }
+    ptr = alph;
+
+
+    for(x=0;x<26;x++)
+    {
+       cout<< *ptr;
+        ptr++;
+    }
+ 
+    return(0);
+}
