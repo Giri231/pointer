@@ -1,0 +1,24 @@
+#include<iostream>
+
+using namespace std;
+
+int length(char* s)
+{
+    int count =0;
+    while(*s!='\0')
+    {
+        
+        count++;
+         s++;
+    }
+    return count;
+}
+
+int main()
+{
+    char s[29];
+   cin>>s;
+   cout<<length(s);
+    
+    
+}
