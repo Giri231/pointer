@@ -1,0 +1,25 @@
+#include<iostream>
+
+using namespace std;
+
+void swap(int *a,int *b,int *c)
+{
+    int d;
+    d=*b;
+     *b=*a;
+    *a=*c;
+    *c=d;
+     cout<<a<<endl<<b<<endl<<c;
+
+}
+   
+
+int main()
+{
+    int w,x,y;
+    cin>>w>>x>>y;
+    
+    swap(&w,&x,&y);
+    return 0;
+    
+}
